@@ -2,7 +2,8 @@
   <head>
     <style type="text/css">
       body {
-				background-color: #EEE;
+				background-color: #CCC;
+				margin: 0;
       }
       .container {
         display: inline-flex;
@@ -13,26 +14,29 @@
 				width: 100%; 
 				text-align: center;
 				background-color: #333; 
-				color: #EEE; 
+				color: #CCC; 
 				padding: 10px;
-				margin-bottom: 15px;
 			}
 			.bottom-bar {
 				width: 100%; 
 				text-align: center;
 				background-color: #333; 
-				color: #EEE; 
+				color: #CCC; 
 				padding: 10px;
-				margin-top: 15px;
+			}
+	    .content {
+		    margin: 15px;
 			}
     </style>
   </head>
 	
   <body>
-			<div class="top-bar">
-				social panel de will
-			</div>
 		
+		<div class="top-bar">
+			social panel de will
+		</div>
+		
+		<div class="content">
       <div id="spotify" class="container">
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EpeCOC9lTAJeb?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
@@ -48,9 +52,11 @@
       <div id="goodreads" class="container">
 				<iframe sandbox id="the_iframe" src="https://goodreads.com/widgets/user_update_widget?height=400&num_updates=10&user=175276905&width=250" width="248" height="330" frameborder="0"></iframe>
       </div>
+		</div>
 
 		<div class="bottom-bar">
 			BOTTOM TEXT
 		</div>
+		
   </body>
 </html>
