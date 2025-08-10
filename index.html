@@ -39,22 +39,32 @@
 		</div>
 		
 		<div class="content">
-      <div id="spotify" class="container">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EpeCOC9lTAJeb?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
-      
-      <div id="strava" class="container">
-        <iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/131468372/latest-rides/7209abe4166a1c57c7301edb73d734ad82cb63bb'></iframe>
-      </div>
-      
-      <div id="steam" class="container">
-        <iframe src="https://gamer2810.github.io/steam-miniprofile/?accountId=1040548800&interactive=true&vanityId=k0gg" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
-      </div>
-      
-      <div id="goodreads" class="container">
+		    <div id="spotify" class="container">
+				<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EpeCOC9lTAJeb?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		    </div>
+		  
+		    <div id="strava" class="container">
+				<iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/131468372/latest-rides/7209abe4166a1c57c7301edb73d734ad82cb63bb'></iframe>
+		    </div>
+		  
+		    <div id="steam" class="container">
+				<iframe src="https://gamer2810.github.io/steam-miniprofile/?accountId=1040548800&interactive=true&vanityId=k0gg" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+		    </div>
+		  
+		    <div id="goodreads" class="container">
 				<iframe sandbox id="the_iframe" src="https://goodreads.com/widgets/user_update_widget?height=400&num_updates=10&user=175276905&width=250" width="248" height="330" frameborder="0"></iframe>
-      </div>
-		</div>
+		    </div>
+
+			<div id="letterboxd" class="container">
+				<div id="letterboxd-embed-wrapper-tc">Loading...</div>
+				<script>
+					fetch('https://lb-embed-content.bokonon.dev?username=k0gg')
+					.then(response => response.text())
+					.then(data => {
+					document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
+					});
+				</script>
+			</div>
 
 		<div class="bottom-bar">
 			BOTTOM TEXT
