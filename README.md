@@ -1,12 +1,14 @@
 Personal hub of my socials and an exercise in web design
 
 Panels to design:
-- spotify
+- vsco
 - strava
+- spotify/lastfm
 - letterboxd
 - goodreads
 - steam
-- vsco
+- chess.com
+- monkeytype
 - nytimes wordle and mini
 
 The general idea is to do this using async webscrape requests to build out the panels myself instead of using the iframes like I have now. This way i can practice and show off my css skills and have more design flexibility. However, it may be difficult to scrape certain sites (*ahem* spotify).
